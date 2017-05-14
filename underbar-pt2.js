@@ -116,10 +116,10 @@ const shuffle = function(arr) {
   let swap;
   while (rearIdx) {
     remainingIdx = ~~(Math.random() * rearIdx + 1);
-    rearIdx--;
     swap = res[rearIdx];
     res[rearIdx] = res[remainingIdx];
     res[remainingIdx] = swap;
+    rearIdx--;
   }
   return res;
 };
